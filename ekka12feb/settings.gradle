@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='ekka.12feb'

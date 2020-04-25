@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	  <meta charset="UTF-8">
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+
+	<div class="container" id="container">
+
+
+		<div class="form-container sign-up-container">
+				<form id="signup-form">
+					<h1>Create Account</h1>
+					<span><br>Use your Email for Registration</span>
+					<input type="text" placeholder="Name" id="up_name" />
+					<input type="email" placeholder="Email" id="up_email"/>
+					<input type="password" placeholder="Password" id="up_password"/>
+					<button id="signUpBtn">Sign Up</button>
+				</form>
+		</div>
+
+		<div class="form-container sign-in-container">
+				<form id="signin-form">
+					<h1>Sign in</h1>
+					<span><br>Use your Email Account to Login</span>
+					<input type="email" placeholder="Email" id="in_email"/>
+					<input type="password" placeholder="Password" id="in_password"/>
+					<button id="signInBtn">Sign In</button>
+					<button id="directSignIn">Direct</button>
+				</form>
+		</div>
+
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Welcome Back!</h1>
+					<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="gotoSignIn">Sign In</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>Hello, Friend!</h1>
+					<p>Enter your personal details and start journey with us</p>
+					<button class="ghost" id="gotoSignUp">Sign Up</button>
+				</div>
+				</div>
+		</div>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+
+	<script>
+		  var firebaseConfig = {
+			apiKey: "AIzaSyBCmpcDvnsftFfAIIodb5IgGUdpsiSAjwQ",
+			authDomain: "feb-ekka.firebaseapp.com",
+			databaseURL: "https://feb-ekka.firebaseio.com",
+			projectId: "feb-ekka",
+			appId: "1:454540852080:web:0285ef92b9a933b28dedb5",
+			measurementId: "G-Z8MLYNTN54"
+		  };
+
+		  firebase.initializeApp(firebaseConfig);
+		  firebase.analytics();
+
+		  const auth = firebase.auth();
+		  const db = firebase.firestore();
+
+	</script>
+
+  	<script  src="script.js"></script>
+	<script  src="auth.js"></script>
+	</body>
+</html>

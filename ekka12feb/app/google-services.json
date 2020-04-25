@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "454540852080",
+    "firebase_url": "https://feb-ekka.firebaseio.com",
+    "project_id": "feb-ekka",
+    "storage_bucket": "feb-ekka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454540852080:android:889f0da816012bcc8dedb5",
+        "android_client_info": {
+          "package_name": "com.shrey.ekka12feb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454540852080-dmon16v41c3lqe3hkr4p80jb6h8cpjen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shrey.ekka12feb",
+            "certificate_hash": "90aac9801682a60619f59704491b12d8cae1706c"
+          }
+        },
+        {
+          "client_id": "454540852080-ov0tagjaa355i3ld6j7461d89h38o77a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiOR84VYTkiqFN-XmGgM4IIlRYpzXy2Co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454540852080-ov0tagjaa355i3ld6j7461d89h38o77a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customizeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BD4040"
+    tools:context=".Customize">
+
+
+    <ImageView
+        android:id="@+id/ekka"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:contentDescription="hh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/ekka" />
+
+    <ImageView
+        android:id="@+id/ContentBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:contentDescription="@string/box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/search_txt"
+        android:layout_width="325dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:text="Lets create our own style,"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="32dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.05"
+        app:srcCompat="@drawable/back" />
+
+
+    <FrameLayout
+        android:id="@+id/mainframelayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/rounded_corner_video_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693">
+
+        <VideoView
+            android:id="@+id/video_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></VideoView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sideramelayout"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:background="@drawable/rounded_corner_video_bg2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874">
+
+        <VideoView
+            android:id="@+id/video_side"
+            android:layout_width="155dp"
+            android:layout_height="155dp"></VideoView>
+    </FrameLayout>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/buybuttont"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        fancy:fb_defaultColor="#BD4040"
+        fancy:fb_focusColor="#bd6f6f"
+        fancy:fb_fontIconResource="&#xf217;"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Purchase"
+        fancy:layout_constraintBottom_toBottomOf="parent"
+        fancy:layout_constraintEnd_toEndOf="parent"
+        fancy:layout_constraintHorizontal_bias="0.841"
+        fancy:layout_constraintStart_toStartOf="parent"
+        fancy:layout_constraintTop_toTopOf="parent"
+        fancy:layout_constraintVertical_bias="0.863" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/addbuttont"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        fancy:fb_defaultColor="#BD4040"
+        fancy:fb_focusColor="#bd6f6f"
+        fancy:fb_fontIconResource="&#xf0c4;"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Add to Wishlist?"
+        fancy:layout_constraintBottom_toBottomOf="parent"
+        fancy:layout_constraintEnd_toEndOf="parent"
+        fancy:layout_constraintHorizontal_bias="0.841"
+        fancy:layout_constraintStart_toStartOf="parent"
+        fancy:layout_constraintTop_toTopOf="parent"
+        fancy:layout_constraintVertical_bias="0.695" />
+
+    <com.xw.repo.BubbleSeekBar
+        android:layout_width="320dp"
+        android:layout_height="34dp"
+        app:bsb_auto_adjust_section_mark="false"
+        app:bsb_is_float_type="true"
+        app:bsb_max="10.0"
+        app:bsb_min="0.0"
+        app:bsb_second_track_color="#BD4040"
+        app:bsb_section_count="5"
+        app:bsb_section_text_position="below_section_mark"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_show_thumb_text="false"
+        app:bsb_thumb_text_size="12sp"
+        app:bsb_touch_to_seek="true"
+        fancy:layout_constraintBottom_toBottomOf="parent"
+        fancy:layout_constraintEnd_toEndOf="parent"
+        fancy:layout_constraintHorizontal_bias="0.798"
+        fancy:layout_constraintStart_toStartOf="parent"
+        fancy:layout_constraintTop_toTopOf="parent"
+        fancy:layout_constraintVertical_bias="0.344" />
+
+    <TextView
+        android:id="@+id/seekbar_text"
+        android:layout_width="213dp"
+        android:layout_height="26dp"
+        android:text="Adjust Trimmer Length:"
+
+        android:textSize="18dp"
+        fancy:layout_constraintBottom_toBottomOf="parent"
+        fancy:layout_constraintEnd_toEndOf="parent"
+        fancy:layout_constraintHorizontal_bias="0.661"
+        fancy:layout_constraintStart_toStartOf="parent"
+        fancy:layout_constraintTop_toTopOf="parent"
+        fancy:layout_constraintVertical_bias="0.244" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
